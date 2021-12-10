@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/12/08 15:10:43 by gasselin          #+#    #+#              #
-#    Updated: 2021/12/09 10:47:06 by gasselin         ###   ########.fr        #
+#    Created: 2021/12/10 13:34:25 by gasselin          #+#    #+#              #
+#    Updated: 2021/12/10 13:34:43 by gasselin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= this_is_brain
+NAME		= Karen
 
-SRCS		= main.cpp
+SRCS		= main.cpp Karen.cpp
 
 OBJS		= $(SRCS:.cpp=.o)
 OBJ_DIR		= objs

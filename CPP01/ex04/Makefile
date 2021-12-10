@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/12/08 15:10:43 by gasselin          #+#    #+#              #
-#    Updated: 2021/12/09 10:47:06 by gasselin         ###   ########.fr        #
+#    Created: 2021/12/10 09:49:55 by gasselin          #+#    #+#              #
+#    Updated: 2021/12/10 09:50:52 by gasselin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= this_is_brain
+NAME		= replace
 
 SRCS		= main.cpp
 
