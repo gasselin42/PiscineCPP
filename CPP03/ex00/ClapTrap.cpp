@@ -1,8 +1,7 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(std::string _Name) {
+ClapTrap::ClapTrap(std::string _Name) : Name(_Name) {
     std::cout << "Constructor of " << _Name << " has been called" << std::endl;
-    Name = _Name;
     HitPoints = 10;
     EnergyPoints = 10;
     Damage = 0;
