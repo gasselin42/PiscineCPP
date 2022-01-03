@@ -1,5 +1,5 @@
-#ifndef CLAVTRAP_HPP
-#define CLAVTRAV_HPP
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAV_HPP
 
 #include "ClapTrap.hpp"
 
