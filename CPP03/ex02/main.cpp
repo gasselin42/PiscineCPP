@@ -32,5 +32,7 @@ int main(void) {
     frag.takeDamage(200);
     frag.highFivesGuys();
 
+    std::cout << std::endl;
+
     return 0;
 }

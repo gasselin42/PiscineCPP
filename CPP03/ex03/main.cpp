@@ -1,10 +1,10 @@
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main(void) {
     ClapTrap clap("Mark");
     ScavTrap scav("Mario");
     FragTrap frag("Vanessa");
+    DiamondTrap diamond("Connor");
 
     std::cout << std::endl;
 
@@ -31,6 +31,19 @@ int main(void) {
     frag.beRepaired(125);
     frag.takeDamage(200);
     frag.highFivesGuys();
+
+    std::cout << std::endl;
+
+    diamond.attack("Cameron");
+    diamond.takeDamage(70);
+    diamond.beRepaired(15);
+    diamond.beRepaired(60);
+    diamond.takeDamage(100);
+    diamond.guardGate();
+    diamond.highFivesGuys();
+    diamond.whoAmI();
+
+    std::cout << std::endl;
 
     return 0;
 }

@@ -21,5 +21,7 @@ int main(void) {
     scav.takeDamage(150);
     scav.guardGate();
 
+    std::cout << std::endl;
+
     return 0;
 }

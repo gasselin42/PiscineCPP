@@ -11,5 +11,7 @@ int main(void) {
     clap.beRepaired(10);
     clap.takeDamage(20);
 
+    std::cout << std::endl;
+
     return 0;
 }
