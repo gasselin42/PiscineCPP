@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 15:22:18 by gasselin          #+#    #+#             */
-/*   Updated: 2021/12/14 16:12:10 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/03 19:50:55 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,19 +68,29 @@ Fixed&	Fixed::operator/(const Fixed& x) {
 /*-----------------INCREMENTATION-&-DECREMENTATION-OPERATORS------------------*/
 
 Fixed&	Fixed::operator++(void) {
-	
+	FixedPoint++;
+	return (*this);
 }
 
 Fixed	Fixed::operator++(int) {
-
+	Fixed temp;
+	
+	temp = *this;
+	FixedPoint++;
+	return (temp);
 }
 
 Fixed&	Fixed::operator--(void) {
-	
+	FixedPoint--;
+	return (*this);
 }
 
 Fixed	Fixed::operator--(int) {
+	Fixed temp;
 	
+	temp = *this;
+	FixedPoint--;
+	return (temp);
 }
 
 /*---------------------------COMPARISON-OPERATORS-----------------------------*/
@@ -90,33 +100,37 @@ bool	Fixed::operator>(const Fixed& x) {
 }
 
 bool	Fixed::operator<(const Fixed& x) {
-	return this.FixedPoint < x.FixedPoint;
+	return this->FixedPoint < x.FixedPoint;
 }
 
 bool	Fixed::operator>=(const Fixed& x) {
-	return this.FixedPoint >= x.FixedPoint;
+	return this->FixedPoint >= x.FixedPoint;
 }
 
 bool	Fixed::operator<=(const Fixed& x) {
-	return this.FixedPoint <= x.FixedPoint;
+	return this->FixedPoint <= x.FixedPoint;
 }
 
 bool	Fixed::operator==(const Fixed& x) {
-	return this.FixedPoint == x.FixedPoint;
+	return this->FixedPoint == x.FixedPoint;
 }
 
 bool	Fixed::operator!=(const Fixed& x) {
-	return this.FixedPoint != x.FixedPoint;
+	return this->FixedPoint != x.FixedPoint;
 }
 
 /*---------------------------------MIN-MAX------------------------------------*/
 
 const Fixed &Fixed::min(const Fixed &x, const Fixed &y) {
-	
+	if (x.toFloat() < y.toFloat())
+		return (x);
+	return (y);
 }
 
 const Fixed	&Fixed::max(const Fixed &x, const Fixed &y) {
-	
+	if (x.toFloat() > y.toFloat())
+		return(x);
+	return (y);
 }
 
 /*-----------------------------BASIC-FUNCTIONS--------------------------------*/

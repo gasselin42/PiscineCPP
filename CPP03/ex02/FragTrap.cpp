@@ -1,6 +1,6 @@
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap() {
+FragTrap::FragTrap() : ClapTrap() {
     hitpoints = 100;
     energy = 100;
     damage = 30;
@@ -8,23 +8,33 @@ FragTrap::FragTrap() {
     std::cout << "FragTrap " << name << " created" << std::endl;
 }
 
-FragTrap::FragTrap(const std::string & _name) {
-    name = _name;
+FragTrap::FragTrap(const FragTrap & rhs) : ClapTrap(rhs.name) {
+    *this = rhs;
+
+    std::cout << "FragTrap " << name << " created" << std::endl;
+}
+
+FragTrap::FragTrap(const std::string & _name) : ClapTrap(_name) {
     hitpoints = 100;
     energy = 100;
     damage = 30;
 
     std::cout << "FragTrap " << name << " created" << std::endl;
+}
+
+FragTrap & FragTrap::operator=(const FragTrap & rhs) {
+    name = rhs.name;
+    hitpoints = rhs.hitpoints;
+    energy = rhs.energy;
+    damage = rhs.damage;
+
+    return *this;
 }
 
 FragTrap::~FragTrap() {
     std::cout << "FragTrap " << name << " destroyed" << std::endl;
 }
 
-void FragTrap::attack(const std::string & target) const {
-    std::cout << "FragTrap " << name << " attacks " << target << ", causing " << damage << " points of damage" << std::endl;
-}
-
-void FragTrap::highFivesGuys() {
+void FragTrap::highFivesGuys() const {
     std::cout << "FragTrap " << name << " has given you a high five" << std::endl;
 }
