@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:41:20 by gasselin          #+#    #+#             */
-/*   Updated: 2021/11/24 11:28:51 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/09 15:24:15 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <cctype>
 #include <iostream>
 #include <cstring>
-using namespace std;
 
 int	main(int argc, char **argv)
 {
@@ -22,7 +21,7 @@ int	main(int argc, char **argv)
 	int	j;
 	
 	if (argc == 1)
-		puts("* LOUD AND UNBEARABLE FEEDBACK NOISE *");
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 	else
 	{
 		while (argv[++i])
@@ -31,7 +30,7 @@ int	main(int argc, char **argv)
 			while (argv[i][++j])
 				putchar(toupper(argv[i][j]));
 		}
-		cout << endl;
+		std::cout << std::endl;
 	}
 	return 0;
 }

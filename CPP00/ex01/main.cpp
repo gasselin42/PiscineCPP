@@ -6,13 +6,12 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 15:22:47 by gasselin          #+#    #+#             */
-/*   Updated: 2021/12/07 14:17:04 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/09 15:19:50 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <cstring>
-using namespace std;
 
 #include "Contact.hpp"
 #include "Phonebook.hpp"
@@ -20,18 +19,18 @@ using namespace std;
 int	main(void)
 {
 	Phonebook	phonebook;
-	string		line;
+	std::string		line;
 	int			i;
 
 	while (42)
 	{
-		cout << endl;
-		cout << "Please enter one of the following commands :" << endl;
-		cout << "'ADD'		: Add a new contact" << endl;
-		cout << "'SEARCH'	: See the informations of a contact" << endl;
-		cout << "'EXIT'		: Close the Phonebook and delete contacts" << endl;
-		cout << "> ";
-		getline(cin >> ws, line);
+		std::cout << std::endl;
+		std::cout << "Please enter one of the following commands :" << std::endl;
+		std::cout << "'ADD'		: Add a new contact" << std::endl;
+		std::cout << "'SEARCH'	: See the informations of a contact" << std::endl;
+		std::cout << "'EXIT'		: Close the Phonebook and delete contacts" << std::endl;
+		std::cout << "> ";
+		getline(std::cin >> std::ws, line);
 		i = -1;
 		while (line[++i])
 			line[i] = toupper(line[i]);
@@ -42,7 +41,7 @@ int	main(void)
 		else if (line == "EXIT")
 			break ;
 		else
-			cout << "Error: Invalid command" << endl;
+			std::cout << "Error: Invalid command" << std::endl;
 	}
 	return 0;
 }

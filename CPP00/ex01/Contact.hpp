@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 10:08:40 by gasselin          #+#    #+#             */
-/*   Updated: 2021/12/07 14:18:09 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/09 15:18:53 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,23 @@
 
 #include <string>
 #include <iostream>
-using namespace std;
 
 class Contact {
  private:
 	int	active;
 	int	index;
-	string	first_name;
-	string	last_name;
-	string	nickname;
-	string	phone_nb;
-	string	secret;
+	std::string	first_name;
+	std::string	last_name;
+	std::string	nickname;
+	std::string	phone_nb;
+	std::string	secret;
 
  public:
 	Contact();
 	~Contact();
 
-	int&	get_number(string var);
-	string&	get_str(string var);
+	int&	get_number(std::string var);
+	std::string&	get_str(std::string var);
 };
 
 #endif

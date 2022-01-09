@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 10:10:35 by gasselin          #+#    #+#             */
-/*   Updated: 2021/12/07 10:37:59 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/09 15:17:50 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 #include <iomanip>
 #include <stdlib.h>
 #include <cstring>
-using namespace std;
 
 #include "Contact.hpp"
 
