@@ -6,14 +6,19 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 13:52:44 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/04 13:52:45 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/10 11:30:59 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
 
 #include "ClapTrap.hpp"
+
+#include <iostream>
+#include <string>
 
 class ScavTrap : public ClapTrap {
  public:

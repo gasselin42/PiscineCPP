@@ -6,9 +6,11 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:07:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/04 14:11:51 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/10 11:28:57 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef CAT_HPP
 #define CAT_HPP

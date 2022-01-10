@@ -6,14 +6,19 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 13:53:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/04 13:53:47 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/10 11:31:11 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef FRAGTRAP_HPP
 #define FRAGTRAP_HPP
 
 #include "ClapTrap.hpp"
+
+#include <iostream>
+#include <string>
 
 class FragTrap : virtual public ClapTrap {
  public:

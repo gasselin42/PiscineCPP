@@ -6,9 +6,11 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 13:51:27 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/04 13:51:28 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/10 11:29:13 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef CLAPTRAP_HPP
 #define CLAPTRAP_HPP
