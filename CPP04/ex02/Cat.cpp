@@ -1,40 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/10 12:33:19 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/10 13:34:14 by gasselin         ###   ########.fr       */
+/*   Created: 2022/01/10 12:47:37 by gasselin          #+#    #+#             */
+/*   Updated: 2022/01/10 14:36:08 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Cat.hpp"
 
-Animal::Animal() : type("Animal") {
-    std::cout << "Default Animal created" << std::endl;
+Cat::Cat() : Animal(), brain(new Brain) {
+    type = "Cat";
+
+    std::cout << "Default Cat created" << std::endl;
 }
 
-Animal::Animal(const Animal & rhs) {
+Cat::Cat(const Cat & rhs) : Animal(), brain(new Brain) {
     *this = rhs;
 
-    std::cout << "Copy Animal created" << std::endl;
-}
-Animal::~Animal() {
-    std::cout << "Animal destroyed" << std::endl;
+    std::cout << "Copy Cat created" << std::endl;
 }
 
-Animal & Animal::operator=(const Animal & rhs) {
+Cat::~Cat() {
+    delete brain;
+
+    std::cout << "Cat destroyed" << std::endl;
+}
+
+Cat & Cat::operator=(const Cat & rhs) {
     type = rhs.type;
-    
+    brain = new Brain(*rhs.brain);
     return *this;
 }
 
-void Animal::makeSound() const {
-    std::cout << "Animal noise" << std::endl;
-}
-
-const std::string& Animal::getType() const {
-    return (type);
+void Cat::makeSound() const {
+    std::cout << "Meow" << std::endl;
 }

@@ -6,28 +6,31 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:00:57 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/04 14:06:55 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/10 13:34:21 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
 #include <iostream>
-#include <string.h>
+#include <string>
 
 class Animal {
  protected:
-    std::string type;
+   std::string type;
 
  public:
-    Animal();
-    Animal(const Animal & rhs);
-    virtual ~Animal();
+   Animal();
+   Animal(const Animal & rhs);
+   virtual ~Animal();
 
-    Animal & operator=(const Animal & rhs);
+   Animal & operator=(const Animal & rhs);
 
-    virtual void makeSound() const;
+   virtual void makeSound() const;
+   const std::string& getType() const;
 };
 
 #endif

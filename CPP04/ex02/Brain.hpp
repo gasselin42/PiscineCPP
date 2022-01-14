@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/04 14:07:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/10 12:31:30 by gasselin         ###   ########.fr       */
+/*   Created: 2022/01/10 13:15:18 by gasselin          #+#    #+#             */
+/*   Updated: 2022/01/10 13:38:45 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#ifndef CAT_HPP
-#define CAT_HPP
-
-#include "Animal.hpp"
+#ifndef BRAIN_HPP
+#define BRAIN_HPP
 
 #include <iostream>
 #include <string>
 
-class Cat : public Animal {
+class Brain {
+ private:
+    std::string ideas[100];
+
  public:
-    Cat();
-    Cat(const Cat & rhs);
-    virtual ~Cat();
+    Brain();
+    Brain(const Brain & rhs);
+    ~Brain();
 
-    Cat & operator=(const Cat & rhs);
+    Brain & operator=(const Brain & rhs);
 
-    virtual void makeSound() const;
+    const std::string&  getIdea(const size_t index) const;
+    void                setIdea(const std::string& idea, const size_t index);
 };
 
 #endif

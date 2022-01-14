@@ -5,14 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/10 12:56:05 by gasselin          #+#    #+#              #
-#    Updated: 2022/01/10 13:05:46 by gasselin         ###   ########.fr        #
+#    Created: 2022/01/14 11:07:25 by gasselin          #+#    #+#              #
+#    Updated: 2022/01/14 15:20:49 by gasselin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= Animal
+NAME		= bureaucrat
 
-SRCS		= main.cpp Dog.cpp Cat.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS		= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp \
+				RobotomyRequestForm.cpp PresidentialPardonForm.cpp
 
 OBJS		= $(SRCS:.cpp=.o)
 OBJ_DIR		= objs

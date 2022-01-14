@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 12:33:19 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/10 13:34:14 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/10 15:08:45 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,6 @@ Animal & Animal::operator=(const Animal & rhs) {
     return *this;
 }
 
-void Animal::makeSound() const {
-    std::cout << "Animal noise" << std::endl;
-}
-
 const std::string& Animal::getType() const {
-    return (type);
+    return type;
 }
