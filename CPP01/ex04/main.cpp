@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 09:50:58 by gasselin          #+#    #+#             */
-/*   Updated: 2021/12/10 13:24:30 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:10:31 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	nb_lines(char *argv) {
 	std::ifstream	ifs(argv);
 	int	i = 0;
 
+	if (ifs.fail())
+		return (0);
 	while (getline(ifs, line))
 		i++;
 	ifs.close();

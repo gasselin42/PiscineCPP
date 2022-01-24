@@ -6,11 +6,11 @@
 #    By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/18 16:57:40 by gasselin          #+#    #+#              #
-#    Updated: 2022/01/18 16:58:06 by gasselin         ###   ########.fr        #
+#    Updated: 2022/01/24 10:30:29 by gasselin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= serialize
+NAME		= identify
 
 SRCS		= main.cpp
 

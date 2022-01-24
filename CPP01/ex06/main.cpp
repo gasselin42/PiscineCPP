@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 14:15:28 by gasselin          #+#    #+#             */
-/*   Updated: 2021/12/10 14:52:41 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:17:18 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,17 @@ int main(int argc, char **argv) {
 	i = karen.get_level(argv[1]);
 	
 	switch (i) {
-	case 0 :
-		karen.complain("DEBUG");
-	case 1 :
-		karen.complain("INFO");
-	case 2 :
-		karen.complain("WARNING");
-	case 3 :
-		karen.complain("ERROR");
-		break ;
-	default :
-		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+		case 0 :
+			karen.complain("DEBUG");
+		case 1 :
+			karen.complain("INFO");
+		case 2 :
+			karen.complain("WARNING");
+		case 3 :
+			karen.complain("ERROR");
+			break ;
+		default :
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	}
 	return 0;
 }
