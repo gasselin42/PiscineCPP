@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/28 15:46:32 by gasselin          #+#    #+#              #
-#    Updated: 2022/01/28 17:29:17 by gasselin         ###   ########.fr        #
+#    Created: 2022/01/26 23:37:04 by gasselin          #+#    #+#              #
+#    Updated: 2022/01/28 14:25:12 by gasselin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= convert
+NAME		= span
 
-SRCS		= main.cpp convert.cpp
+SRCS		= main.cpp span.cpp
 
 OBJS		= $(SRCS:.cpp=.o)
 OBJ_DIR		= objs
