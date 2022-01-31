@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 12:24:52 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/10 12:47:01 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/01/31 10:43:24 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class WrongAnimal {
 
     WrongAnimal & operator=(const WrongAnimal & rhs);
 
-    virtual void makeSound() const;
+    void makeSound() const;
     std::string getType() const;
 };
 
