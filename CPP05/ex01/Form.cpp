@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 12:10:16 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/14 12:57:23 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/03 10:07:56 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,11 +51,11 @@ void Form::beSigned(const Bureaucrat & brct) {
 }
 
 const char * Form::GradeTooHighException::what() const throw() {
-    return "grade too high\n";
+    return "grade too high";
 }
 
 const char * Form::GradeTooLowException::what() const throw() {
-    return "grade too low\n";
+    return "grade too low";
 }
 
 void Form::checkGrades() const {
@@ -79,7 +79,7 @@ void Form::checkGrades() const {
 }
 
 std::ostream & operator<<(std::ostream & lhs, const Form & rhs) {
-	lhs << rhs.getName() << " form, signing grade : " << rhs.getSignGrade() << ", executing grade : "
+	lhs << rhs.getName() << " form, signing grade " << rhs.getSignGrade() << ", executing grade "
         << rhs.getExecGrade() << (rhs.isSigned() ? ", is signed" : ", isn't signed") << std::endl;
 	return lhs;
 }
