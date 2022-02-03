@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 11:53:22 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/31 10:48:11 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/03 11:06:09 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int main() {
 
 	{
 	    const WrongAnimal *ptr = new WrongCat();
-	    ptr->getType();
 	    ptr->makeSound();
 	    delete ptr;
 	}
@@ -40,7 +39,6 @@ int main() {
 
 	{
 	    const WrongCat *ptr = new WrongCat();
-	    ptr->getType();
 	    ptr->makeSound();
 	    delete ptr;
 	}
