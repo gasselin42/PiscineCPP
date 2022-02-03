@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 11:06:53 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/03 09:58:35 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/03 10:45:09 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,9 +133,13 @@ int main()
     test.executeForm(f1);
     test.executeForm(f2);
 
+	std::cout << "\n";
+
     test1.executeForm(f);
     test1.executeForm(f1);
     test1.executeForm(f2);
+
+	std::cout << "\n";
 
     test2.executeForm(f);
     test2.executeForm(f1);

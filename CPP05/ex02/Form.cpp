@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 12:10:16 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/14 15:23:50 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/03 10:36:37 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,11 +57,11 @@ void Form::checkExecution(const Bureaucrat & executor) const {
 
 
 const char * Form::GradeTooHighException::what() const throw() {
-    return "grade too high\n";
+    return "grade too high";
 }
 
 const char * Form::GradeTooLowException::what() const throw() {
-    return "grade too low\n";
+    return "grade too low";
 }
 
 void Form::checkGrades() const {
