@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 16:03:47 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/28 18:05:53 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/07 15:11:26 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,11 +118,9 @@ void Convert::find_type()
             if (is_pseudo(input)) {
                 if (input == "nanf" || input == "inff" || input == "-inff" || input == "+inff")
                     input.erase(input.end() - 1);
-                Double = strtod(input.c_str(), NULL);
+                Double = strtof(input.c_str(), NULL);
                 Type = isPseudo;
             }
-            if (input == "nanf" || input == "inff" || input == "-inff" || input == "+inff")
-                ;
             else if (input.find('.') != std::string::npos && input[input.length() - 1] == 'f')
             {
                 Type = isFloat;
@@ -163,17 +161,13 @@ void Convert::cast_type() {
             Double = static_cast<double>(Float);
             break;
         }
-        case isDouble: {
+        case isDouble: 
+		case isPseudo: {
             Int = static_cast<int>(Double);
             Float = static_cast<float>(Double);
             c = static_cast<char>(Double);
             break;
         }
-        case isPseudo:
-            Int = static_cast<int>(Double);
-            Float = static_cast<float>(Double);
-            c = static_cast<char>(Double);
-            break;
         case error:
             break;
     }
