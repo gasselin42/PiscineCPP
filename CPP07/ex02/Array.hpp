@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 21:59:23 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/26 22:55:08 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/09 14:11:38 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ Array<T> & Array<T>::operator=(const Array & rhs)
     return *this;
 }
 
-template <class T>
+template <typename T>
 T & Array<T>::operator[](unsigned int i)
 {
     if (i >= size_ || i < 0)
