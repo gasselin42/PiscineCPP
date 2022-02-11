@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 21:50:04 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/09 14:11:16 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/11 10:47:21 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void iter(T *arr, int len, void (*fn)(T&)) {
 template<typename T>
 void print(T &item)
 {
-	std::cout << item;
+	std::cout << item << "\n";
 }

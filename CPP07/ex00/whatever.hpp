@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 21:25:45 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/09 14:11:20 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/11 11:23:34 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void swap(T &a, T &b) {
 }
 
 template <typename T>
-T min(T a, T b) {
+T & min(T & a, T & b) {
     return (a < b) ? a : b;
 }
 
 template <typename T>
-T max(T a, T b) {
+T & max(T & a, T & b) {
     return (a > b) ? a : b;
 }
