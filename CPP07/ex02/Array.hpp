@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 21:59:23 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/11 11:15:21 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/14 10:41:19 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ Array<T> & Array<T>::operator=(const Array & rhs)
 template <typename T>
 T & Array<T>::operator[](unsigned int i)
 {
-	std::cout << "Hello ";
+	// std::cout << "Hello ";
     if (i >= size_ || i < 0)
         throw std::exception();
     return arr[i];
