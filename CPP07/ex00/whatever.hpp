@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 21:25:45 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/11 11:23:34 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/14 11:42:22 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <cstring>
 
 template <typename T>
-void swap(T &a, T &b) {
+void swap(T & a, T & b) {
     T tmp;
 
     tmp = a;

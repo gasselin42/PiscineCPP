@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 21:59:01 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/14 10:39:42 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/14 11:55:52 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ struct tmp{
 
 int main(int, char**)
 {
+	Array<int> numbers2;
     Array<int> numbers(MAX_VAL);
     int* mirror = new int[MAX_VAL];
     srand(time(NULL));
@@ -47,6 +48,13 @@ int main(int, char**)
 	
     try {
         numbers[-2] = 0;
+    }
+    catch(const std::exception& e) {
+        std::cerr << e.what() << '\n';
+    }
+
+	try {
+        numbers2[0] = 0;
     }
     catch(const std::exception& e) {
         std::cerr << e.what() << '\n';
