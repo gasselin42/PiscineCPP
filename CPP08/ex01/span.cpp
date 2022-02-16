@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:39:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/15 16:22:17 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/16 12:11:55 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,13 @@ int Span::longestSpan()
     std::vector<int> tmp;
 	std::vector<int>::iterator first, second;
 	
-	for (first = vec.begin(); second != vec.end(); first++)
+	for (first = vec.begin(); second != vec.end() - 1; first++)
 	{
 		second = first + 1;
 		int diff = abs(*first - *second);
 		tmp.push_back(diff);
 	}
-	return (*(std::max_element(tmp.begin(), tmp.end() - 1)));
+	return (*(std::max_element(tmp.begin(), tmp.end())));
 }
 
 int Span::shortestSpan()
@@ -65,13 +65,13 @@ int Span::shortestSpan()
     std::vector<int> tmp;
 	std::vector<int>::iterator first, second;
 	
-	for (first = vec.begin(); second != vec.end(); first++)
+	for (first = vec.begin(); second != vec.end() - 1; first++)
 	{
 		second = first + 1;
 		int diff = abs(*first - *second);
 		tmp.push_back(diff);
 	}
-	return (*(std::min_element(tmp.begin(), tmp.end() - 1)));
+	return (*(std::min_element(tmp.begin(), tmp.end())));
 }
 
 const char * Span::MaxSizeReached::what() const throw() {
