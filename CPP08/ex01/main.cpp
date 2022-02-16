@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:16:36 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/15 16:27:34 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/16 16:20:21 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ int main(void)
 		Span sp(5);
 		
 		try {
-			sp.addNumber(5);
 			sp.addNumber(3);
+			sp.addNumber(5);
 			sp.addNumber(17);
 			sp.addNumber(9);
 			sp.addNumber(11);
@@ -80,7 +80,7 @@ int main(void)
 		try {
 			Span sp(MAX);
 
-			sp.fillVector();
+			sp.fillDeque();
 			sp.addNumber(5); // should throw an exception
 		} catch (std::exception &e) {
 			std::cout << e.what() << std::endl;
@@ -95,7 +95,7 @@ int main(void)
 		try {
 			Span sp(MAX);
 
-			sp.fillVector();
+			sp.fillDeque();
 
 			std::cout << "Short span : " << sp.shortestSpan() << std::endl;
 			std::cout << "Long span : " << sp.longestSpan() << std::endl;

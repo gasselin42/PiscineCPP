@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:25:34 by gasselin          #+#    #+#             */
-/*   Updated: 2022/01/28 15:25:02 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/16 16:03:52 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,30 @@
 
 #include <iostream>
 #include <exception>
-#include <vector>
+#include <deque>
 #include <algorithm>
 #include <ctime>
+#include <numeric>
 
 #define MAX 15000
 
 class Span {
 private:
-    std::vector<int> vec;
+    std::deque<int> deq;
     unsigned int    size;
 
 public:
-    Span() : vec(0), size(0) {}
+    Span() : deq(0), size(0) {}
     Span(unsigned int N);
     Span(const Span & rhs);
     Span & operator=(const Span & rhs);
     ~Span() {}
 
     void addNumber(const int n);
-    int shortestSpan();
-    int longestSpan();
+    unsigned int shortestSpan();
+    unsigned int longestSpan();
 
-    void fillVector();
+    void fillDeque();
 
     class MaxSizeReached : public std::exception {
         public:
