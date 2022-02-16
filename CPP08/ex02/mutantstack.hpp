@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:28:04 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/16 11:13:30 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/16 11:34:23 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,9 @@ class MutantStack : public std::stack<T> {
 	const_reverse_iterator rbegin() const { return this->c.rbegin(); }
 	const_reverse_iterator rend() const { return this->c.rend(); }
 };
+
+// https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords
+
+// https://www.boost.org/doc/libs/1_66_0/libs/spirit/doc/html/spirit/advanced/customize/iterate/container_iterator.html
+
+// https://devblogs.microsoft.com/oldnewthing/20190619-00/?p=102599
