@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 23:35:11 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/15 11:28:01 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:35:02 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void fill_container(T &cont)
 
 int main(void)
 {
-	// Same thing as std::find
 	// https://www.geeksforgeeks.org/deque-vs-vector-in-c-stl/
 
 	std::vector<int> vec; // https://en.cppreference.com/w/cpp/container/vector
