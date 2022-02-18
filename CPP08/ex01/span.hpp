@@ -6,11 +6,14 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:25:34 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/18 10:19:53 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:25:58 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#ifndef SPAN_HPP
+#define SPAN_HPP
 
 #include <iostream>
 #include <exception>
@@ -52,3 +55,5 @@ public:
             virtual const char * what() const throw();
     };
 };
+
+#endif

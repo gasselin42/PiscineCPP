@@ -6,13 +6,14 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:28:04 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/16 16:37:12 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:25:21 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#pragma once
+#ifndef MUTANTSTACK_HPP
+#define HUTANTSTACK_HPP
 
 #include <iostream>
 #include <stack>
@@ -47,6 +48,8 @@ class MutantStack : public std::stack<T> {
 	const_reverse_iterator rbegin() const { return this->c.rbegin(); }
 	const_reverse_iterator rend() const { return this->c.rend(); }
 };
+
+#endif
 
 // https://stackoverflow.com/questions/610245/where-and-why-do-i-have-to-put-the-template-and-typename-keywords
 

@@ -6,11 +6,14 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 23:11:45 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/16 13:36:36 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:24:25 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#ifndef EASYFIND_HPP
+#define EASYFIND_HPP
 
 #include <iostream>
 #include <vector>
@@ -29,3 +32,5 @@ typename T::iterator easyfind(T &arr, const int &target)
 	    throw std::exception();
     return index;
 }
+
+#endif
