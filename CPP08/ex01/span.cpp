@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:39:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/16 16:18:58 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:14:17 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void Span::fillDeque()
 {
     srand(static_cast<unsigned int>(time(NULL)));
 
-    for (int i = 0; i < MAX; i++)
+    for (unsigned int i = 0; i < size; i++)
         deq.push_back(rand());
 }
 

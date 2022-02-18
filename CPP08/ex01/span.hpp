@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:25:34 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/16 16:03:52 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:19:53 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 #include <algorithm>
 #include <ctime>
 #include <numeric>
-
-#define MAX 15000
 
 class Span {
 private:
