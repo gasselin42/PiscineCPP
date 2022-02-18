@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:28:04 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/18 10:25:21 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/18 10:27:52 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,7 @@ class MutantStack : public std::stack<T> {
 // https://www.boost.org/doc/libs/1_66_0/libs/spirit/doc/html/spirit/advanced/customize/iterate/container_iterator.html
 
 // https://devblogs.microsoft.com/oldnewthing/20190619-00/?p=102599
+
+// https://www.guru99.com/stack-in-cpp-stl.html
+
+// https://docs.microsoft.com/en-us/cpp/standard-library/stack-class?view=msvc-170
