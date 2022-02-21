@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:16:36 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/18 10:20:01 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/21 13:47:48 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ int main(void)
 		try {
 			Span sp(15000);
 
-			sp.fillDeque();
+			sp.fillDeque(15000);
 
 			std::cout << "Short span : " << sp.shortestSpan() << std::endl;
 			std::cout << "Long span : " << sp.longestSpan() << std::endl;

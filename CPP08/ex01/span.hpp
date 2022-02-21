@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:25:34 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/18 10:25:58 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/21 13:49:57 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ public:
     unsigned int shortestSpan();
     unsigned int longestSpan();
 
-    void fillDeque();
+    void fillDeque(const int n);
 
     class MaxSizeReached : public std::exception {
         public:

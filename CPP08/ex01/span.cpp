@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:39:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/21 11:51:34 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/21 13:51:40 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,14 @@ void Span::addNumber(const int n)
     deq.push_back(n);
 }
 
-void Span::fillDeque()
+void Span::fillDeque(const int n)
 {
-    srand(static_cast<unsigned int>(time(NULL)));
+    std::srand(static_cast<unsigned int>(time(NULL)));
 
-    for (unsigned int i = 0; i < size; i++)
-        deq.push_back(rand());
+    std::deque<int> d(n);
+	std::generate(d.begin(), d.end(), std::rand);
+
+	deq.insert(deq.end(), d.begin(), d.end());
 }
 
 unsigned int Span::longestSpan()
