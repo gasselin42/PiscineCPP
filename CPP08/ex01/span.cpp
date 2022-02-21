@@ -6,7 +6,7 @@
 /*   By: gasselin <gasselin@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 14:39:46 by gasselin          #+#    #+#             */
-/*   Updated: 2022/02/18 10:14:17 by gasselin         ###   ########.fr       */
+/*   Updated: 2022/02/21 11:51:34 by gasselin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,9 @@ unsigned int Span::shortestSpan()
 
     Span tmp(*this);
 
-    std::deque<int>::iterator it = std::min_element(tmp.deq.begin(), tmp.deq.end());
-    unsigned int num = *it;
-    tmp.deq.erase(it);
-    return (*std::min_element(tmp.deq.begin(), tmp.deq.end()) - num);
+	std::sort(tmp.deq.begin(), tmp.deq.end());
+	std::adjacent_difference(tmp.deq.begin(), tmp.deq.end(), tmp.deq.begin());
+	return (*std::min_element(std::next(tmp.deq.begin()), tmp.deq.end()));
 }
 
 const char * Span::MaxSizeReached::what() const throw() {
